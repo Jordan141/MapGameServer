@@ -16,6 +16,6 @@ A Game Server for the Map based game
 
 #### Additional Information
 
-/Update will check if you have completed all the checkpoints and automatically notify the players of the result.
-/New will be called by player 1, player 2 will join by /connect, followed by room name (?) **TBD**
-/Close is a form of administrative power that will force end the game if the players get bored. This will either be P1's choice or require both their consent.
+- /Update will check if you have completed all the checkpoints and automatically notify the players of the result.
+- /New will be called by player 1, player 2 will join by /connect, followed by room name (?) **TBD**
+- /Close is a form of administrative power that will force end the game if the players get bored. This will either be P1's choice or require both their consent.
