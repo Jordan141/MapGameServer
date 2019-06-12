@@ -8,7 +8,7 @@ A Game Server for the Map based game
 
 #### Endpoints
 | Endpoint | Description | Data Required | Method |
-|---|---|---|---|---|
+|---|---|---|---|
 | /new | Will create a new game | Player 1 and Player 2 | POST |
 | /connect | Will connect P2 to P1's game ID | room ID | POST |
 | /update | Will update a player's position | Player position | POST |
