@@ -1,0 +1,9 @@
+{
+    "ID": "some-uuid-number",
+    "players" : [
+        {
+            "playerId": "TDB",
+            "playerScore": 0
+        }
+    ]
+}
