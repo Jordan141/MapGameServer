@@ -1,19 +1,28 @@
-app.get('/', (req, res) => {
+const express = require('express')
+const router = express.Router()
+
+router.get('/', (req, res) => {
     console.log('You were visited.')
 })
 
-app.post('/new', (req, res) => {
+router.post('/new', (req, res) => {
     //TODO: Create a new game
+    res.send('POST request to /new')
 })
 
-app.post('/connect', (req, res) => {
+router.post('/connect', (req, res) => {
     //TODO: Connect to a new game
+    res.send('POST request to /connect')
 })
 
-app.post('/update', (req, res) => {
+router.post('/update', (req, res) => {
     //TODO: Update an existing game
+    res.send('POST request to /update')
 })
 
-app.post('/close', (req, res) => {
+router.post('/close', (req, res) => {
     //TODO: Force close or delete an existing game.
+    res.send('POST request to /close')
 })
+
+module.exports = router

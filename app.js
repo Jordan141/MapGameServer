@@ -1,11 +1,13 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
-require('dotenv').config()
 const bodyParser = require('body-parser')
 const firebase = require('firebase')
 const PORT = process.env.PORT || 8000
 const IP = process.env.IP || "127.0.0.1"
 const projectId = process.env.PROJECT_ID
+
+const gameRoutes = require('./routes/gameRoutes')
 
 const firebaseConfig = {
     apiKey: process.env.API_KEY,
@@ -21,6 +23,7 @@ firebase.initializeApp(firebaseConfig)
 const database = firebase.database()
 
 app.use(bodyParser.urlencoded({extended: true}))
+app.use('/', gameRoutes)
 
 app.listen(PORT, IP, (req, res) => {
     console.log('Server has started.')
